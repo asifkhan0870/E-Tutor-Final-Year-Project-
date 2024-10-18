@@ -1,20 +1,21 @@
-import { View, Text, Pressable, FlatList, Image } from 'react-native';
-import React, { useState } from 'react';
-import { ChevronDownIcon, ChevronUpIcon } from 'react-native-heroicons/solid';
-import { themeColors } from '../theme';
-import { images } from '../assets';
+import { View, Text, Pressable, FlatList, Image } from "react-native";
+import React, { useState } from "react";
+import { ChevronDownIcon, ChevronUpIcon } from "react-native-heroicons/solid";
+import { themeColors } from "../theme";
+import { images } from "../assets";
+import { SlChemistry } from "react-icons/sl";
 
 const { ruler, paint, numbers, microscope } = images;
 
 const SubjectSelector = ({ grades }) => {
   const [showDropDown, setShowDropDown] = useState(false);
-  const [selectedSubject, setSelectedSubject] = useState('');
+  const [selectedSubject, setSelectedSubject] = useState("");
 
   const subjectOptions = [
-    { label: 'Arts', image: paint },
-    { label: 'Science', image: microscope },
-    { label: 'Math', image: ruler },
-    { label: 'Commerce', image: numbers },
+    { label: "Physics", image: paint },
+    { label: "Chemistry", image: microscope },
+    { label: "Maths", image: numbers },
+    { label: "Others", image: ruler },
   ];
 
   const toggleDropdown = () => {
@@ -22,7 +23,7 @@ const SubjectSelector = ({ grades }) => {
   };
 
   const selectSubject = (subject) => {
-    console.log('selected grade --> ', subject);
+    console.log("selected grade --> ", subject);
     setSelectedSubject(subject);
   };
 
@@ -48,8 +49,8 @@ const SubjectSelector = ({ grades }) => {
               <Pressable
                 className={`flex space-x-3 flex-row w-[45%] items-center justify-center m-2 rounded-[10px] py-3 ${
                   selectedSubject === item.label
-                    ? 'bg-bgPurple'
-                    : 'bg-bgLightGray2'
+                    ? "bg-bgPurple"
+                    : "bg-bgLightGray2"
                 }`}
                 onPress={() => selectSubject(item?.label)}
               >
@@ -57,8 +58,8 @@ const SubjectSelector = ({ grades }) => {
                 <Text
                   className={`text-center font-exo font-semibold text-base ${
                     selectedSubject === item.label
-                      ? 'text-bgWhite'
-                      : 'text-darkGrayText'
+                      ? "text-bgWhite"
+                      : "text-darkGrayText"
                   }`}
                 >
                   {item?.label}

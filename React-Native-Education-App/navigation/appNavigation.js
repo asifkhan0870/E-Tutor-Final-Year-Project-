@@ -1,23 +1,23 @@
-import { View, Text, Image } from 'react-native';
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from '../screens/HomeScreen';
-import WelcomeScreen from '../screens/WelcomeScreen';
-import LoginScreen from '../screens/SignInScreen';
-import SignUpScreen from '../screens/SignUpScreen';
-import SelectGradeScreen from '../screens/SelectGradeScreen';
-import SelectProvinceScreen from '../screens/SelectProvinceScreen';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { View, Text, Image } from "react-native";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "../screens/HomeScreen";
+import WelcomeScreen from "../screens/WelcomeScreen";
+import LoginScreen from "../screens/SignInScreen";
+import SignUpScreen from "../screens/SignUpScreen";
+import SelectGradeScreen from "../screens/SelectGradeScreen";
+import SelectProvinceScreen from "../screens/SelectProvinceScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {
   HomeIcon,
   ShoppingBagIcon,
   Squares2X2Icon,
-} from 'react-native-heroicons/solid';
-import StreamScreen from '../screens/StreamScreen';
-import ClassWorkScreen from '../screens/ClassWorkScreen';
-import { themeColors } from '../theme';
-import { images } from '../assets';
+} from "react-native-heroicons/solid";
+import StreamScreen from "../screens/StreamScreen";
+import ClassWorkScreen from "../screens/ClassWorkScreen";
+import { themeColors } from "../theme";
+import { images } from "../assets";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -25,6 +25,7 @@ const Stack = createNativeStackNavigator();
 {
   /** ============== App Navigator =================== */
 }
+
 export default function AppNavigation() {
   return (
     <NavigationContainer>
@@ -70,11 +71,12 @@ export default function AppNavigation() {
 
 const { streamIcon, classWorkIcon, exploreIcon } = images;
 const extraTabOptions = {
-  tabBarLabelStyle: { fontFamily: 'exo' },
+  tabBarLabelStyle: { fontFamily: "exo" },
   tabBarStyle: { borderTopRightRadius: 12, borderTopLeftRadius: 12 },
   tabBarActiveTintColor: themeColors.bgPurple,
   tabBarInactiveTintColor: themeColors.darkGrayText,
 };
+
 function BottomTabNavigator() {
   return (
     <Tab.Navigator initialRouteName="Explore">

@@ -3,15 +3,19 @@ import { images } from "..";
 const { teacher1, teacher2, teacher3, teacher4, school1, school2, school3 } =
   images;
 export const welcomeScreenData = {
-  title: `Let's find the "A" with us`,
+  title: `Welcome at our E-Tutor Application `,
+  secondarytitle: `Let's Start`,
   subtitle: `Please Sign in to view personalized recommendations`,
 };
 
 export const gradesData = [
-  "Grade 1-5",
-  "Grade 6-9",
-  "Grade 10-11",
-  "Grade 12-13",
+  // "Grade 1-5",
+  // "Grade 6-9",
+  // "Grade 10-12",
+  // "Grade 12-13",
+  "IIT-JEE ",
+  "NEET",
+  "GATE",
 ];
 
 export const provincesData = [
@@ -27,22 +31,22 @@ export const provincesData = [
   "Jharkhand",
   "Karnataka",
   "Kerala",
-  "Madhya Pradesh",
-  "Maharashtra",
-  "Manipur",
-  "Meghalaya",
-  "Mizoram",
-  "Nagaland",
-  "Odisha",
-  "Punjab",
-  "Rajasthan",
-  "Sikkim",
-  "Tamil Nadu",
-  "Telangana",
-  "Tripura",
-  "Uttar Pradesh",
-  "Uttarakhand",
-  "West Bengal",
+  // "Madhya Pradesh",
+  // "Maharashtra",
+  // "Manipur",
+  // "Meghalaya",
+  // "Mizoram",
+  // "Nagaland",
+  // "Odisha",
+  // "Punjab",
+  // "Rajasthan",
+  // "Sikkim",
+  // "Tamil Nadu",
+  // "Telangana",
+  // "Tripura",
+  // "Uttar Pradesh",
+  // "Uttarakhand",
+  // "West Bengal",
 ];
 
 export const teacherData = [
